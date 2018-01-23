@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алина Бевз](https://up.htmlacademy.ru/adaptive/13/user/119368).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Старшинов](https://htmlacademy.ru/profile/id100874).
 
 ---
 
