@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="20" alt="Приложение PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>    
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="title">Фотографии пользователей</h1>
+      <div class="text-block">
+        <p>Взгляните на фотографии, которые выкладывают пользователи!</p>
+        <p>Видите, как не хватает ваших?</p>
+      </div>
+      <section class="post">
+        <a href="#"><img class="post__photo post__photo--panarama" src="img/photo1.jpg" alt="Фото Анны"></a>
+        <blockquote class="post__comment">
+          <cite class="post__author-name">Анна <span class="post__time">(5 минут назад)</span></cite>
+          <p class="post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="post__likes">Нравится: 215</p>
+        </blockquote>
+      </section>
+      <section class="post">
+        <a href="#"><img class="post__photo" src="img/photo2.jpg" alt="Фото Левона"></a>
+        <blockquote class="post__comment">
+          <cite class="post__author-name">Левон <span class="post__time">(5 часов назад)</span></cite>
+          <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+          <p class="post__likes">Нравится: 356</p>
+        </blockquote>
+      </section>
+      <section class="post">
+        <a href="#"><img class="post__photo" src="img/photo3.jpg" alt="Фото Антона"></a>
+        <blockquote class="post__comment">
+          <cite class="post__author-name">Антон <span class="post__time">(12 часов назад)</span></cite>
+          <p class="post__text">Соседи будут рады!</p>
+          <p class="post__likes">Нравится: 666</p>
+        </blockquote>
+      </section>
+      <section class="post">
+        <a href="#"><img class="post__photo" src="img/photo4.jpg" alt="Фото Бориса"></a>
+        <blockquote class="post__comment">
+          <cite class="post__author-name">Борис <span class="post__time">(20 часов назад)</span></cite>
+          <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="post__likes">Нравится: 215</p>
+        </blockquote>
+      </section>
+      <section class="post">
+        <a href="#"><img class="post__photo" src="img/photo5.jpg" alt="Фото Сергея"></a>
+        <blockquote class="post__comment">
+          <cite class="post__author-name">Сергей <span class="post__time">(25 часов назад)</span></cite>
+          <p class="post__text">Самая кубанская в мире!</p>
+          <p class="post__likes">Нравится: 4</p>
+        </blockquote>
+      </section>
+      <section class="post">
+        <a href="#"><img class="post__photo" src="img/photo6.jpg" alt="Фото Максима"></a>
+        <blockquote class="post__comment">
+          <cite class="post__author-name">Максим <span class="post__time">(40 часов назад)</span></cite>
+          <p class="post__text">Где снег-то?</p>
+          <p class="post__likes">Нравится: 150</p>
+        </blockquote>
+      </section>
+      <section class="post">
+        <a href="#"><img class="post__photo" src="img/photo7.jpg" alt="Фото Надежды"></a>
+        <blockquote class="post__comment">
+          <cite class="post__author-name">Надежда <span class="post__time">(45 часов назад)</span></cite>
+          <p class="post__text">Всем GM и взаимные лайки!</p>
+          <p class="post__likes">Нравится: 2560</p>
+        </blockquote>
+      </section>
+      <div class="text-block">
+        <p>Затмите их всех!</p>
+        <p>Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+      <section class="add">
+        <img class="add__photo" scr="img/add__photo.jpg" alt="Добавленная фотография">
+        <button class="add__edit add__edit--crop">Обрезать</button>
+        <button class="add__edit add__edit--color">Насыщенность</button>
+        <button class="add__edit add__edit--contrast">Контраст</button>
+        <div class="add__scale"></div>
+        <button class="add__button">Запостить</button>
+        <button class="add__button add__button--disable">Отмена</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__link" href="index.html">Главная страница</a>
+        <section class="social">
+          <a class="social__btn social__btn--tw" href="#">Twitter</a>
+          <a class="social__btn social__btn--fb" href="#">Facebook</a>
+          <a class="social__btn social__btn--youtube" href="#">Youtube</a>
+        </section>
+        <section class="copyright">
+          <p class="copyright__text">Website by</p>
+          <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
