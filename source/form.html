@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="20" alt="Приложение PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>    
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="form__quest" for="surname-field">
+          Фамилия:
+          <input class="form__field" id="surname-field" type="text" name="surname" placeholder="Укажите фамилию *">
+        </label>
+        <br>
+        <label class="form__quest" for="name-field">
+          Имя:
+          <input class="form__field" id="name-field" type="text" name="name" placeholder="Введите ваше имя *">
+        </label>
+        <br>
+        <label class="form__quest" for="patronymic-field">
+          Отчество:
+          <input class="form__field" id="patronymic-field" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+        </label>
+        <fieldset class="form__item">
+          <legend class="form__quest">Ваши безбашенные достижения в путешествии:</legend>
+          <label class="form__ans" for="shark-checkbox">
+            <input class="form__checkbox" id="shark-checkbox" type="checkbox" name="shark" checked>
+            <span class="form__indicator"></span>
+            Сделал селфи с акулой 
+          </label>
+          <label class="form__ans" for="burn-checkbox">
+            <input class="form__checkbox" id="burn-checkbox" type="checkbox" name="burn" checked>
+            <span class="form__indicator"></span>
+            Обгорел на пляже 
+          </label>
+          <label class="form__ans" for="chuck-checkbox">
+            <input class="form__checkbox" id="chuck-checkbox" type="checkbox" name="chuck">
+            <span class="form__indicator"></span>
+            Видел Чака Норриса 
+          </label>
+          <label class="form__ans" for="souv-checkbox">
+            <input class="form__checkbox" id="souv-checkbox" type="checkbox" name="souv">
+            <span class="form__indicator"></span>
+            Накупил сувениров 
+          </label>
+          <label class="form__ans" for="pisa-checkbox">
+            <input class="form__checkbox" id="pisa-checkbox" type="checkbox" name="pisa" checked>
+            <span class="form__indicator"></span>
+            Удержал башню 
+          </label>
+          <label class="form__ans" for="hotel-checkbox">
+            <input class="form__checkbox" id="hotel-checkbox" type="checkbox" name="hotel">
+            <span class="form__indicator"></span>
+            Разгромил отель 
+          </label>          
+        </fieldset>
+        <label class="form__quest" for="tel-field">
+          Номер телефона
+          <input class="form__field" id="tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
+        </label>
+        <br>
+        <label class="form__quest" for="email-field">
+          Адрес почты
+          <input class="form__field" id="email-field" type="email" name="email" placeholder="Введите почту *">
+        </label>
+        <br>
+        <fieldset class="form__item">
+          <legend class="form__quest">С каким приложением путешествовали?</legend>
+          <label class="form__ans" for="app-checkbox">
+            <input class="form__checkbox" id="app-checkbox" type="radio" name="app" value="ios" checked>
+            <span class="form__indicator--radio"></span>
+            Pink для iOS 
+          </label>
+          <label class="form__ans" for="app-checkbox">
+            <input class="form__checkbox" id="app-checkbox" type="radio" name="app" value="android">
+            <span class="form__indicator--radio"></span>
+            Pink на Android 
+          </label>
+          <label class="form__ans" for="app-checkbox">
+            <input class="form__checkbox" id="app-checkbox" type="radio" name="app" value="windows">
+            <span class="form__indicator--radio"></span>
+            Windows Phone
+          </label>
+        </fieldset>
+        <label class="form__quest" for="emotion-field">
+          Опишите свои эмоции
+          <textarea class="form__field" id="emotion-field" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </label>
+        <br>
+        <button class="form__btn" type="submit">Отправить форму</button>
+        <p>*-обязательные поля</p>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__link" href="index.html">Главная страница</a>
+        <section class="social">
+          <a class="social__btn social__btn--tw" href="#">Twitter</a>
+          <a class="social__btn social__btn--fb" href="#">Facebook</a>
+          <a class="social__btn social__btn--youtube" href="#">Youtube</a>
+        </section>
+        <section class="copyright">
+          <p class="copyright__text">Website by</p>
+          <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
