@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,16 +14,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a>Конкурс</a>
+              <a class="main-nav__link">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
+              <a class="main-nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
       </nav>
@@ -30,82 +31,78 @@
     <main class="page-main">
       <h1 class="title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="form__quest" for="surname-field">
+        <label class="form__quest">
           Фамилия:
           <input class="form__field" id="surname-field" type="text" name="surname" placeholder="Укажите фамилию *">
         </label>
-        <br>
-        <label class="form__quest" for="name-field">
+        <label class="form__quest">
           Имя:
           <input class="form__field" id="name-field" type="text" name="name" placeholder="Введите ваше имя *">
         </label>
-        <br>
-        <label class="form__quest" for="patronymic-field">
+        <label class="form__quest">
           Отчество:
           <input class="form__field" id="patronymic-field" type="text" name="patronymic" placeholder="Ну и отчество тоже">
         </label>
         <fieldset class="form__item">
           <legend class="form__quest">Ваши безбашенные достижения в путешествии:</legend>
-          <label class="form__ans" for="shark-checkbox">
+          <label class="form__ans">
             <input class="form__checkbox" id="shark-checkbox" type="checkbox" name="shark" checked>
             <span class="form__indicator"></span>
             Сделал селфи с акулой
           </label>
-          <label class="form__ans" for="burn-checkbox">
+          <label class="form__ans">
             <input class="form__checkbox" id="burn-checkbox" type="checkbox" name="burn" checked>
             <span class="form__indicator"></span>
             Обгорел на пляже
           </label>
-          <label class="form__ans" for="chuck-checkbox">
+          <label class="form__ans">
             <input class="form__checkbox" id="chuck-checkbox" type="checkbox" name="chuck">
             <span class="form__indicator"></span>
             Видел Чака Норриса
           </label>
-          <label class="form__ans" for="souv-checkbox">
+          <label class="form__ans">
             <input class="form__checkbox" id="souv-checkbox" type="checkbox" name="souv">
             <span class="form__indicator"></span>
             Накупил сувениров
           </label>
-          <label class="form__ans" for="pisa-checkbox">
+          <label class="form__ans">
             <input class="form__checkbox" id="pisa-checkbox" type="checkbox" name="pisa" checked>
             <span class="form__indicator"></span>
             Удержал башню
           </label>
-          <label class="form__ans" for="hotel-checkbox">
+          <label class="form__ans">
             <input class="form__checkbox" id="hotel-checkbox" type="checkbox" name="hotel">
             <span class="form__indicator"></span>
             Разгромил отель
           </label>
         </fieldset>
-        <label class="form__quest" for="tel-field">
+        <label class="form__quest">
           Номер телефона
           <input class="form__field" id="tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
         </label>
-        <br>
-        <label class="form__quest" for="email-field">
+        <label class="form__quest">
           Адрес почты
           <input class="form__field" id="email-field" type="email" name="email" placeholder="Введите почту *">
         </label>
-        <br>
         <fieldset class="form__item">
           <legend class="form__quest">С каким приложением путешествовали?</legend>
-          <label class="form__ans" for="app-checkbox">
-            <input class="form__checkbox" id="app-checkbox" type="radio" name="app" value="ios" checked>
+          <label class="form__ans">
+            <input class="form__checkbox" id="ios-checkbox" type="radio" name="app" value="ios" checked>
             <span class="form__indicator--radio"></span>
             Pink для iOS
           </label>
-          <label class="form__ans" for="app-checkbox">
-            <input class="form__checkbox" id="app-checkbox" type="radio" name="app" value="android">
+          <label class="form__ans">
+            <input class="form__checkbox" id="and-checkbox" type="radio" name="app" value="android">
             <span class="form__indicator--radio"></span>
             Pink на Android
           </label>
-          <label class="form__ans" for="app-checkbox">
-            <input class="form__checkbox" id="app-checkbox" type="radio" name="app" value="windows">
+          <label class="form__ans">
+            <input class="form__checkbox" id="win-checkbox" type="radio" name="app" value="windows">
             <span class="form__indicator--radio"></span>
             Windows Phone
           </label>
         </fieldset>
-        <label class="form__quest" for="emotion-field">
+        <label class="form__quest">
           Опишите свои эмоции
           <textarea class="form__field" id="emotion-field" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </label>
